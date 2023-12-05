@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>STUDENT EXERCISE</h1>
+  <br />
+
+  <form action="#">
+    <fieldset>
+      <legend>Testforms</legend>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="6-20 characters" required />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="min 8 characters" required />
+      <br />
+      <br />
+
+      <p>Gender</p>
+      <br />
+
+      <!-- In order to make it so a user can only select one radio out of a group, they all need to have the same name -->
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">female</label>
+      <br />
+      <br />
+
+      <label for="orders"></label>
+      <select name="orders" id="orders">
+        <option value="" disabled selected>Please Select One</option>
+        <option value="breakfast">breakfast</option>
+        <option value="lunch">lunch</option>
+        <option value="dinner">dinner</option>
+      </select>
+      <br />
+      <br />
+
+      <p>Meals</p>
+      <br />
+
+      <!-- In order to make it so a user can only select one radio out of a group, they all need to have the same name -->
+      <input type="radio" name="meals" value="breakfast" id="breakfast" />
+      <label for="breakfast">breakfast</label>
+      <input type="radio" name="meals" value="lunch" id="lunch" />
+      <label for="lunch">lunch</label>
+      <input type="radio" name="meals" value="dinner" id="dinner" />
+      <label for="dinner">dinner</label>
+    </fieldset>
+    <br />
+    <br />
+
+    <br />
+    <button type="submit">send</button>
+    <button type="reset">cancel</button>
+  </form>
+</body>
+
+</html>
